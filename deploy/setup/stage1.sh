@@ -90,4 +90,4 @@ sed -i -e 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
 
 # run main setup script as "plaid" user with python 2.7
 #
-su plaid -l -s /bin/sh -c 'scl enable python27 "/webapps/code/myapp.org/deploy/setup/s2.sh"'
+su plaid -l -s /bin/sh -c 'scl enable python27 "/webapps/code/myapp.org/deploy/setup/stage2.sh"'
