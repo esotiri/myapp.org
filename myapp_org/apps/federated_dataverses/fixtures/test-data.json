@@ -1,0 +1,92 @@
+[
+{
+    "pk": 1, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Odum Institute Dataverse", 
+        "created": "2014-10-02T19:01:49.082Z", 
+        "modified": "2014-10-15T14:23:28.459Z", 
+        "logo_image": "federated_logos/odum.png", 
+        "visible": true, 
+        "sort_order": 20, 
+        "homepage": "http://arc.irss.unc.edu/dvn/", 
+        "slug": "odum-institute-dataverse", 
+        "description": "Open to All Data Depositors"
+    }
+},
+{
+    "pk": 2, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Harvard Dataverse", 
+        "created": "2014-10-02T19:10:28.184Z", 
+        "modified": "2014-10-15T14:23:20.215Z", 
+        "logo_image": "federated_logos/harvard_1.png", 
+        "visible": true, 
+        "sort_order": 10, 
+        "homepage": "http://dataverse-demo.iq.harvard.edu/", 
+        "slug": "harvard-dataverse", 
+        "description": "Open to All Data Depositors"
+    }
+},
+{
+    "pk": 3, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Fudan University Dataverse", 
+        "created": "2014-10-02T19:15:07.707Z", 
+        "modified": "2014-10-15T14:23:50.812Z", 
+        "logo_image": "federated_logos/Fudan_University.png", 
+        "visible": true, 
+        "sort_order": 40, 
+        "homepage": "http://www.fdsm.fudan.edu.cn/en/", 
+        "slug": "fudan-university-dataverse", 
+        "description": "Open to Lorem Ipsum"
+    }
+},
+{
+    "pk": 4, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "DANS - Dutch Dataverse", 
+        "created": "2014-10-02T19:29:57.478Z", 
+        "modified": "2014-10-15T14:23:40.053Z", 
+        "logo_image": "federated_logos/dans.gif", 
+        "visible": true, 
+        "sort_order": 30, 
+        "homepage": "https://dataverse.nl/dvn/", 
+        "slug": "dans-dutch-dataverse", 
+        "description": "Open to DANS Members"
+    }
+},
+{
+    "pk": 5, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "University of Alberta Libraries Dataverse", 
+        "created": "2014-10-15T14:25:49.282Z", 
+        "modified": "2014-10-15T14:47:17.366Z", 
+        "logo_image": "federated_logos/alberta.gif", 
+        "visible": true, 
+        "sort_order": 50, 
+        "homepage": "http://www.library.ualberta.ca/", 
+        "slug": "university-of-alberta-libraries-dataverse", 
+        "description": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Scholars Portal Dataverse", 
+        "created": "2014-10-15T14:26:15.934Z", 
+        "modified": "2014-10-15T14:53:54.572Z", 
+        "logo_image": "federated_logos/scholarsportal.gif", 
+        "visible": true, 
+        "sort_order": 60, 
+        "homepage": "http://guides.scholarsportal.info/dataverse", 
+        "slug": "scholars-portal-dataverse", 
+        "description": ""
+    }
+}
+]
