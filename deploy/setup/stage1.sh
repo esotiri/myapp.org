@@ -1,6 +1,6 @@
 #!/bin/sh
 
-su $SUDO_USER -s /bin/sh -c '. s1.sh'
+#su $SUDO_USER -s /bin/sh -c '. s1.sh'
 # user
 useradd plaid
 plaid ALL=(root) NOPASSWD: /sbin/service httpd restart
