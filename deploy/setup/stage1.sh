@@ -5,32 +5,22 @@
 useradd plaid
 # EPEL already enabled on HMDC VM
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/6Server/x86_64/epel-release-6-8.noarch.rpm
-# base                                                                                                                
-# yum install -y  wget
-# install postgres server 9.3  ##did not work with postgres##
-#wget http://yum.postgresql.org/9.3/redhat/rhel-6-x86_64/pgdg-centos93-9.3-1.noarch.rpm
-#rpm -ivh pgdg-centos93-9.3-1.noarch.rpm
-#yum install python27-python-psycopg2.x86_64
-
-echo "install apache ..."
 yum install -y httpd mod_wsgi ack elinks libjpeg-turbo-devel
-echo "softare collection"
 rpm --import http://ftp.scientificlinux.org/linux/scientific/6.4/x86_64/os/RPM-GPG-KEY-sl
 yum install -y http://ftp.scientificlinux.org/linux/scientific/6.4/x86_64/external_products/softwarecollections/yum-conf-softwarecollections-1.0-1.el6.noarch.rpm
-echo "Install Python27"
 yum install -y python27
 echo "Setting up Django app" ##django1.7 => python2.7; django1.6=> python2.6
-echo "instll pip"
+echo "Installing pip for Python 2.7"
 scl enable python27 "easy_install pip"
 echo "Install virtualenvwrapper"
 scl enable python27 "pip install virtualenvwrapper"
 #
 echo "Setup virtualenv directory"
 mkdir -p /webapps/virtualenvs
-24	chown plaid /webapps/virtualenvs
-25	mkdir /webapps/code
-26	chown plaid /webapps/code
-3
+chown plaid /webapps/virtualenvs
+mkdir /webapps/code
+chown plaid /webapps/code
+
 su plaid -l -s /bin/sh -c 'cd /webapps/code && cp -r /git/myapp.org .'
 cp /webapps/code/myapp.org/deploy/files/etc/sudoers.d/plaid /etc/sudoers.d
 chmod 640 /etc/sudoers.d/plaid
