@@ -1,4 +1,4 @@
-dataverse_org/dataverse_org/settings/secret*
+myapp_org/myapp_org/settings/secret*
 test_setup/*.db3
 *.idea
 
