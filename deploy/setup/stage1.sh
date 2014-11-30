@@ -81,7 +81,7 @@ chown apache /webapps/data/myapp_org/myapp_org_uploaded_files
 # Permissions for database
 #
 chown plaid:apache /webapps/data/myapp_org/sqlite/myapp_org.db3
-chmod 660 /webapps/data/myapp_org/sqlite/myappe_org.db3
+chmod 660 /webapps/data/myapp_org/sqlite/myapp_org.db3
 
 service httpd start
 chkconfig httpd on
