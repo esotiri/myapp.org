@@ -62,8 +62,7 @@ chown apache /webapps/data/myapp_org/myapp_org_uploaded_files
 echo "run main setup script as Plaid user with python 2.7"
 # having trouble runnign stage2 with su
 #su $SUDO_USER -s /bin/sh -c '. stage2.sh'
-su plaid -l -s /bin/sh -c 
-scl enable python27 "/webapps/code/myapp.org/deploy/setup/stage2.sh"
+su plaid -l -s /bin/sh -c 'scl enable python27 "/webapps/code/myapp.org/deploy/setup/stage2.sh"'
 #
 echo "Permissions for database"
 chown plaid:apache /webapps/data/myapp_org/sqlite/myapp_org.db3
