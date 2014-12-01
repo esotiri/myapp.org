@@ -55,18 +55,18 @@ chown plaid /var/www/myapp_org
 #
 # Create directory for uploaded files
 #
-# echo "Create data directory for uploaded files"
+echo "Create data directory for uploaded files"
 mkdir -p /webapps/data/myapp_org/myapp_org_uploaded_files
 chown apache /webapps/data/myapp_org/myapp_org_uploaded_files
 #
-# run main setup script as "plaid" user with python 2.7
+echo "run main setup script as "plaid" user with python 2.7"
 #
 su plaid -l -s /bin/sh -c 'scl enable python27 "/webapps/code/myapp.org/deploy/setup/stage2.sh"'
-# Permissions for database
 #
+echo "Permissions for database"
 chown plaid:apache /webapps/data/myapp_org/sqlite/myapp_org.db3
 chmod 660 /webapps/data/myapp_org/sqlite/myapp_org.db3
-
+echo "starting apache"
 service httpd start
 chkconfig httpd on
 # on HMDC VM, changed SELinux to "permissive" in /etc/selinux/config
