@@ -19,7 +19,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   # installs Django and sets up website
   config.vm.provision "shell", path: "deploy/setup/stage1.sh"
-  config.vm.provision "shell", path: "deploy/setup/stage2.sh"
   
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
