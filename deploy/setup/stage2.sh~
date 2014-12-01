@@ -41,5 +41,5 @@ echo "Run collecstatic to copy files to the static www directory"
 python manage.py collectstatic --noinput --settings=myapp_org.settings.production
 echo "Create directory for federated myapp logos"
 mkdir -p /var/www/myapp_org/media/federated_logos
-cp /webapps/code/myapp.org/myapp/media/federated_logos/* /var/www/myapp/media/federated_logos
-python manage.py loaddata apps/federated_myapp/fixtures/test-data.json --settings=myapp_org.settings.production
+#cp /webapps/code/myapp.org/myapp/media/federated_logos/* /var/www/myapp/media/federated_logos
+#python manage.py loaddata apps/federated_myapp/fixtures/test-data.json --settings=myapp_org.settings.production
