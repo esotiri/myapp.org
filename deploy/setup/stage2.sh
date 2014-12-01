@@ -4,7 +4,7 @@
 # and is run by the "plaid" user one time for setup.
 # i.e. scl enable python27 "path/to/this/script.sh"
 # See also http://developerblog.redhat.com/2013/02/14/setting-up-django-and-python-2-7-on-red-hat-enterprise-6-the-easy-way/
-
+# chmod +x and after add some comment
 #source /usr/bin/virtualenvwrapper.sh # python 2.6 version
 source /opt/rh/python27/root/usr/bin/virtualenvwrapper.sh
 #
