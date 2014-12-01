@@ -70,6 +70,6 @@ chmod 660 /webapps/data/myapp_org/sqlite/myapp_org.db3
 service httpd start
 chkconfig httpd on
 # on HMDC VM, changed SELinux to "permissive" in /etc/selinux/config
-sed -i -e 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
+# sed -i -e 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
 
 
