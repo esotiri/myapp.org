@@ -59,7 +59,7 @@ echo "Create data directory for uploaded files"
 mkdir -p /webapps/data/myapp_org/myapp_org_uploaded_files
 chown apache /webapps/data/myapp_org/myapp_org_uploaded_files
 #
-echo "run main setup script as "plaid" user with python 2.7"
+echo "run main setup script as Plaid user with python 2.7"
 #
 su plaid -l -s /bin/sh -c 'scl enable python27 "/webapps/code/myapp.org/deploy/setup/stage2.sh"'
 #
