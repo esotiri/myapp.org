@@ -7,7 +7,7 @@ test_setup/*.db3
 __pycache__/
 *.py[cod]
 # Temp
-*~
+*.*~
 # C extensions
 *.so
 
